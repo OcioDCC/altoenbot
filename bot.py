@@ -3,8 +3,10 @@
 from __future__ import unicode_literals
 
 import json
+import os
 
 import requests
+import sys
 import telepot
 import PIL
 from PIL import ImageFont
@@ -12,10 +14,10 @@ from PIL import Image
 from PIL import ImageDraw
 from telepot.namedtuple import InlineQueryResultPhoto, InputTextMessageContent
 
-bot = telepot.Bot("281070738:AAFzojC-b9O3kQtLcFIlue7xKBevW4xqKzg")
+bot = telepot.Bot(sys.argv[1])
 answerer = telepot.helper.Answerer(bot)
-FONT = "opensans.ttf"
-SIZES = [9,18,24]
+FONT = "notosans.ttf"
+SIZES = [9,17,24]
 POSITIONS2 = [80,100]
 POSITIONS3 = [70,90,120]
 POSITIONS_DOWN = [190,200]
@@ -60,7 +62,7 @@ def add_text_to_center(im,draw,text,height,size):
 def create_image(id, text):
     im = Image.open('altoen.png', 'r').copy()
     draw = ImageDraw.Draw(im)
-    arr_dos = text.split("#",2)
+    arr_dos = text.split("#",1)
     arr = get_text_array(arr_dos[0], MAX_CHARS_TEXT)
     if "#" in text:
         arr_down = get_text_array(arr_dos[1],MAX_CHARS_DOWN)
@@ -78,6 +80,7 @@ def create_image(id, text):
     im.save(imgname)
     r = requests.post('http://uploads.im/api', files={'img': open(imgname, 'rb')})
     reqpost = json.loads(r.text)["data"]
+    os.remove(imgname)
     return reqpost
 
 
@@ -92,7 +95,8 @@ def on_inline_query(msg):
                         photo_url = reqpost["img_url"],
                         thumb_url = reqpost["thumb_url"],
                         photo_width = int(reqpost["img_width"]),
-                        photo_width= int(reqpost["img_height"]),
+                        photo_height= int(reqpost["img_height"]),
+                        caption=reqpost["img_url"]
                    )]
         return articles
 
