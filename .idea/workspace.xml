@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e840ff9-6cf8-4e48-9b88-9176df9633bb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/123.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889618593691792.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889618766350001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889618827521614.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889619423621150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889619855662159.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889620300636021.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18889620414374671.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/586097396304369166.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/586097396904364296.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/586097397376084750.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/586097397536003580.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bot.py" afterPath="$PROJECT_DIR$/bot.py" />
-    </list>
+    <list default="true" id="2e840ff9-6cf8-4e48-9b88-9176df9633bb" name="Default" comment="" />
     <ignored path="altoenbot.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -404,7 +389,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />

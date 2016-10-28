@@ -16,7 +16,7 @@ from telepot.namedtuple import InlineQueryResultPhoto, InputTextMessageContent
 
 bot = telepot.Bot(sys.argv[1])
 answerer = telepot.helper.Answerer(bot)
-FONT = "notosans.ttf"
+FONT = "opensans.ttf"
 SIZES = [9,17,24]
 POSITIONS2 = [80,100]
 POSITIONS3 = [70,90,120]
