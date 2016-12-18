@@ -23,7 +23,8 @@ POSITIONS3 = [70,90,120]
 POSITIONS_DOWN = [190,200]
 MAX_CHARS_TEXT = [16,12,12]
 MAX_CHARS_DOWN = [18,18]
-
+SERV_ROOT = "/var/www/bots/altoenbot/imgs/"
+SERV_URL = "http://45.55.157.236/bots/altoenbot/imgs/"
 
 def get_text_array(text,max_chars):
     text = text.strip()
@@ -77,12 +78,24 @@ def create_image(id, text):
         positions = POSITIONS_DOWN
         add_text_to_center(im,draw,arr_down[i],positions[i],size)
     imgname = str(id)+".png"
-    im.save(imgname)
-    r = requests.post('http://uploads.im/api', files={'img': open(imgname, 'rb')})
-    reqpost = json.loads(r.text)["data"]
+    imgpath = SERV_ROOT + imgname
+    im.save(SERV_ROOT+imgname)
+    #r = requests.post('http://uploads.im/api', files={'img': open(imgname, 'rb')})
+    #reqpost = json.loads(r.text)["data"]
+    reqpost = get_img_metadata(imgname,imgpath)
     os.remove(imgname)
     return reqpost
 
+def get_img_metadata(imgname, imgpath):
+    meta = {};
+    with Image.open(imgpath) as im:
+        thumbname = "thumb."+imgname;
+        im.thumbnail((128,128), Image.ANTIALIAS)
+        im.save(SERV_ROOT + thumbname, "JPEG")
+        meta['img_width'], meta['img_height'] = im.size;
+        meta['img_url'] = SERV_URL + imgname;
+        meta['thumb_url'] = SERV_URL + thumbname;
+    return meta;
 
 def on_inline_query(msg):
     def compute():
@@ -96,7 +109,7 @@ def on_inline_query(msg):
                         thumb_url = reqpost["thumb_url"],
                         photo_width = int(reqpost["img_width"]),
                         photo_height= int(reqpost["img_height"]),
-                        caption=reqpost["img_url"]
+                        caption= reqpost["img_url"]
                    )]
         return articles
 
