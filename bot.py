@@ -83,7 +83,7 @@ def create_image(id, text):
     #r = requests.post('http://uploads.im/api', files={'img': open(imgname, 'rb')})
     #reqpost = json.loads(r.text)["data"]
     reqpost = get_img_metadata(imgname,imgpath)
-    os.remove(imgname)
+    #os.remove(imgname)
     return reqpost
 
 def get_img_metadata(imgname, imgpath):
