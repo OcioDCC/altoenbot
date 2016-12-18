@@ -95,6 +95,8 @@ def get_img_metadata(imgname, imgpath):
         meta['img_width'], meta['img_height'] = im.size;
         meta['img_url'] = SERV_URL + imgname;
         meta['thumb_url'] = SERV_URL + thumbname;
+        meta['name'] = imgname;
+
     return meta;
 
 def on_inline_query(msg):
@@ -103,13 +105,13 @@ def on_inline_query(msg):
         print ('Inline Query:', query_id, from_id, query_string)
         reqpost = create_image(query_id,query_string)
         articles = [InlineQueryResultPhoto(
-                        id=reqpost["img_url"][0:64],
+                        id=reqpost["name"][0:64],
                         title='AltoEnBot',
                         photo_url = reqpost["img_url"],
                         thumb_url = reqpost["thumb_url"],
                         photo_width = int(reqpost["img_width"]),
                         photo_height= int(reqpost["img_height"]),
-                        caption= reqpost["img_url"]
+                        caption= "Creado con @altoenbot"
                    )]
         return articles
 
@@ -117,8 +119,9 @@ def on_inline_query(msg):
 
 def on_chosen_inline_result(msg):
     result_id, from_id, query_string = telepot.glance(msg, flavor='chosen_inline_result')
+    os.remove(SERV_ROOT + id)
+    os.remove(SERV_ROOT + "thumb." + id)
     print ('Chosen Inline Result:', result_id, from_id, query_string)
-
 
 def default_handler(msg):
     content_type, chat_type, chat_id = telepot.glance(msg)
