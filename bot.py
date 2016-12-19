@@ -79,7 +79,7 @@ def create_image(id, text):
         add_text_to_center(im,draw,arr_down[i],positions[i],size)
     imgname = str(id)+".png"
     imgpath = SERV_ROOT + imgname
-    im.save(SERV_ROOT+imgname)
+    im.save(imgpath)
     #r = requests.post('http://uploads.im/api', files={'img': open(imgname, 'rb')})
     #reqpost = json.loads(r.text)["data"]
     reqpost = get_img_metadata(imgname,imgpath)
@@ -96,7 +96,6 @@ def get_img_metadata(imgname, imgpath):
         meta['img_url'] = SERV_URL + imgname;
         meta['thumb_url'] = SERV_URL + thumbname;
         meta['name'] = imgname;
-
     return meta;
 
 def on_inline_query(msg):
@@ -108,13 +107,9 @@ def on_inline_query(msg):
                         id=reqpost["name"][0:64],
                         title='AltoEnBot',
                         photo_url = reqpost["img_url"],
-                        thumb_url = reqpost["thumb_url"],
-                        photo_width = int(reqpost["img_width"]),
-                        photo_height= int(reqpost["img_height"]),
-                        caption= "Creado con @altoenbot"
-                   )]
+                        thumb_url = reqpost["thumb_url"]
+                       )]
         return articles
-
     answerer.answer(msg, compute)
 
 def on_chosen_inline_result(msg):
