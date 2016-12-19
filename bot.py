@@ -95,7 +95,7 @@ def get_img_metadata(imgname, imgpath):
         meta['img_width'], meta['img_height'] = im.size;
         meta['img_url'] = SERV_URL + imgname;
         meta['thumb_url'] = SERV_URL + thumbname;
-        meta['name'] = imgname;
+        meta['name'] = imgname[0:len(imgname)-4];
     return meta;
 
 def on_inline_query(msg):
@@ -107,9 +107,13 @@ def on_inline_query(msg):
                         id=reqpost["name"][0:64],
                         title='AltoEnBot',
                         photo_url = reqpost["img_url"],
-                        thumb_url = reqpost["thumb_url"]
+                        thumb_url = reqpost["thumb_url"],
+                        photo_width = reqpost["img_width"],
+                        photo_height= reqpost["img_height"],
+                        caption = "Creado con @altoenbot"
                        )]
         return articles
+
     answerer.answer(msg, compute)
 
 def on_chosen_inline_result(msg):
