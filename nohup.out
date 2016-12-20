@@ -1,0 +1,180 @@
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/virtualenvs/altoenbot/local/lib/python2.7/site-packages/telepot/helper.py", line 251, in run
+    ans = compute_fn(*compute_args, **compute_kwargs)
+  File "bot.py", line 91, in compute
+    reqpost = create_image(query_id,query_string)
+  File "bot.py", line 82, in create_image
+    reqpost = json.loads(r.text)["data"]
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+

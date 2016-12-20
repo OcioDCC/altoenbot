@@ -24,7 +24,7 @@ POSITIONS_DOWN = [190,200]
 MAX_CHARS_TEXT = [16,12,12]
 MAX_CHARS_DOWN = [18,18]
 SERV_ROOT = "/var/www/bots/altoenbot/imgs/"
-SERV_URL = "http://45.55.157.236/bots/altoenbot/imgs/"
+SERV_URL = "http://salitalabs.adderou.cl/bots/altoenbot/imgs/"
 
 def get_text_array(text,max_chars):
     text = text.strip()
@@ -106,12 +106,13 @@ def on_inline_query(msg):
         articles = [InlineQueryResultPhoto(
                         id=reqpost["name"][0:64],
                         title='AltoEnBot',
-                        photo_url = reqpost["img_url"],
-                        thumb_url = reqpost["thumb_url"],
+                        photo_url =  reqpost["img_url"],
+                        thumb_url = reqpost["img_url"],
                         photo_width = reqpost["img_width"],
                         photo_height= reqpost["img_height"],
                         caption = "Creado con @altoenbot"
                        )]
+	print reqpost["img_url"]
         return articles
 
     answerer.answer(msg, compute)
